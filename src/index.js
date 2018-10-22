@@ -1,1 +1,1 @@
-console.log('Careteen')
+console.log('Careteen');

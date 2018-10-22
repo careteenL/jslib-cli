@@ -1,5 +1,5 @@
 import alias from 'rollup-plugin-alias'
-import eslint from 'rollup-plugin-eslint'
+// import eslint from 'rollup-plugin-eslint'
 import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import babel from 'rollup-plugin-babel'
@@ -21,7 +21,8 @@ export default {
       include: 'node_modules/**'
     }),
     // eslint({
-    //   include: ['src/**/*.js']
+    //   include: ['src/**'],
+    //   exclude: ['node_modules/**']
     // }),
     babel({
       runtimeHelpers: true,

@@ -7,9 +7,10 @@
   "unpkg": "dist/index/min.js",
   "scripts": {
     "clean": "rimraf dist/",
-    "start": "npm run clean && cross-env NODE_ENV=development rollup -w -c build/rollup.dev.config.js",
-    "build": "npm run clean && cross-env NODE_ENV=production rollup -c build/rollup.prod.config.js",
-    "test": "npm run clean",
+    "lint": "eslint -c .eslintrc.js src",
+    "start": "npm run clean && npm run lint && cross-env NODE_ENV=development rollup -w -c build/rollup.dev.config.js",
+    "build": "npm run clean && npm run lint && cross-env NODE_ENV=production rollup -c build/rollup.prod.config.js",
+    "test": "npm run clean && npm run lint",
     "serve": "serve -p 6789"
   },
   "keywords": [
@@ -18,12 +19,20 @@
   ],
   "author": "careteenL <15074806497@163.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/careteenL/jslib-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/careteenL/jslib-cli/issues"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
     "cross-env": "^5.2.0",
     "eslint": "^5.7.0",
+    "pre-commit": "^1.2.2",
     "rimraf": "^2.6.2",
     "rollup": "^0.66.6",
     "rollup-plugin-alias": "^1.4.0",
@@ -40,5 +49,8 @@
   },
   "dependencies": {
     "babel-runtime": "^6.26.0"
-  }
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }
