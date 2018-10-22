@@ -1,0 +1,14 @@
+{
+  "name": "jslib-cli",
+  "version": "0.1.0",
+  "description": "jslib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jslib"
+  ],
+  "author": "careteenL",
+  "license": "MIT"
+}
