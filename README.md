@@ -25,7 +25,9 @@
 
 clone or fork 本仓库
 ```shell
-git clone https://github.com/careteenL/jslib-cli.git
+git clone https://github.com/careteenL/jslib-cli.git yourLibName
+cd yourLibName
+npm install
 ```
 
 修改根目录`rename.js`中`newName`字段为所需名，然后运行下面脚本，一键替换
@@ -33,7 +35,26 @@ git clone https://github.com/careteenL/jslib-cli.git
 npm run rename
 ```
 
+修改`package.json`中`author`、`repository`、`bugs`信息
+
+删除`README.md`的**快速使用**
+
 然后可以愉快地开始开发自己的JS库 :)
+
+单元测试
+```shell
+npm run test
+```
+
+打包生成生产代码
+```shell
+npm run build
+```
+
+修改`package.json`、`README.md`、`CHANGELOG.md`版本号和修改日志，打tag并发布新版到`npm`
+```shell
+npm run release
+```
 
 ## 兼容性
 
