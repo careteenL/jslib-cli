@@ -19,16 +19,21 @@
 - 支持可持续构建`travis-ci`
 - 提供`issue-template`
 - 支持单元测试
+- 支持一键替换仓库名及其依赖
 
 ## 快速使用
 
+clone or fork 本仓库
 ```shell
-npm install @careteen/jslib-cli -S
+git clone https://github.com/careteenL/jslib-cli.git
 ```
 
-```js
-import { test } from '@careteen/jslib-cli'
+修改根目录`rename.js`中`newName`字段为所需名，然后运行下面脚本，一键替换
+```shell
+npm run rename
 ```
+
+然后可以愉快地开始开发自己的JS库 :)
 
 ## 兼容性
 

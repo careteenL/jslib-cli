@@ -11,6 +11,7 @@
     "start": "npm run clean && npm run lint && cross-env NODE_ENV=development rollup -w -c build/rollup.dev.config.js",
     "build": "npm run clean && npm run lint && cross-env NODE_ENV=production rollup -c build/rollup.prod.config.js",
     "test": "mocha --compilers js:babel-core/register ./test  --recursive --reporter mochawesome",
+    "rename": "node rename.js",
     "serve": "serve -p 6789"
   },
   "keywords": [
@@ -48,6 +49,7 @@
     "rollup-plugin-serve": "^0.6.0",
     "rollup-plugin-uglify": "^6.0.0",
     "serve": "^10.0.2",
+    "shelljs": "^0.8.2",
     "uglify-es": "^3.3.9"
   },
   "dependencies": {
