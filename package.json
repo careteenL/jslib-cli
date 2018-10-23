@@ -12,7 +12,8 @@
     "build": "npm run clean && npm run lint && cross-env NODE_ENV=production rollup -c build/rollup.prod.config.js",
     "test": "mocha --compilers js:babel-core/register ./test  --recursive --reporter mochawesome",
     "rename": "node rename.js",
-    "serve": "serve -p 6789"
+    "serve": "serve -p 6789",
+    "release": "npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags"
   },
   "keywords": [
     "rollup",
