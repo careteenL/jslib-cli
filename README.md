@@ -34,9 +34,13 @@ import { test } from '@careteen/jslib-cli'
 
 IE9+
 
-## 文档
+## 使用文档
 
 - api
+
+## issue模板
+
+- [Issue Template](./ISSUETEMPLATE.md)
 
 ## 贡献者
 
@@ -44,8 +48,8 @@ IE9+
 
 ## 更新日志
 
-- [Changelog](https://github.com/careteenL/jslib-cli/blob/master/CHANGELOG.md)
+- [Changelog](./CHANGELOG.md)
 
 ## 计划
 
-- [Todo](https://github.com/careteenL/jslib-cli/blob/master/TODO.md)
+- [Todo](./TODO.md)
