@@ -1,1 +1,1 @@
-console.log('Careteen')
+export { add } from './add'

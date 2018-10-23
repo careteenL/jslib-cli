@@ -10,7 +10,7 @@
     "lint": "eslint -c .eslintrc.js src",
     "start": "npm run clean && npm run lint && cross-env NODE_ENV=development rollup -w -c build/rollup.dev.config.js",
     "build": "npm run clean && npm run lint && cross-env NODE_ENV=production rollup -c build/rollup.prod.config.js",
-    "test": "npm run clean && npm run lint",
+    "test": "mocha --compilers js:babel-core/register ./test  --recursive --reporter mochawesome",
     "serve": "serve -p 6789"
   },
   "keywords": [
@@ -30,8 +30,11 @@
     "babel-core": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
     "cross-env": "^5.2.0",
     "eslint": "^5.7.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.1.1",
     "pre-commit": "^1.2.2",
     "rimraf": "^2.6.2",
     "rollup": "^0.66.6",

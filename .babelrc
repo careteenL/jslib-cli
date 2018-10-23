@@ -15,5 +15,10 @@
       "regeneratore": false,
       "moudleName": "babel-runtime"
     }]
-  ]
+  ],
+  "env": {
+    "development": {
+      "presets": [["env"]]
+    }
+  }
 }
