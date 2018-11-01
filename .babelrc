@@ -18,7 +18,9 @@
   ],
   "env": {
     "development": {
-      "presets": [["env"]]
+      "presets": [["env", {
+        "modules": false
+      }]]
     }
   }
 }

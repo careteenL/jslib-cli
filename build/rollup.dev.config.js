@@ -1,5 +1,5 @@
 import baseConfig from './rollup.base.config'
-import serve from 'rollup-plugin-serve'
+// import serve from 'rollup-plugin-serve'
 
 import { name } from '../package.json'
 
@@ -20,10 +20,6 @@ export default {
     }
   ],
   plugins: [
-    ...baseConfig.plugins,
-    serve({
-      port: 6789,
-      contentBase: ['']
-    })
+    ...baseConfig.plugins
   ]
 }

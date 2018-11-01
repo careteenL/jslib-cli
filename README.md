@@ -20,36 +20,47 @@
 - 提供`issue-template`
 - 支持单元测试
 - 支持一键替换仓库名及其依赖
+- 提供本地开发时编写示例及本地浏览器预览效果
+- 提供文档模板
 
 ## 快速使用
 
-clone or fork 本仓库
+- clone or fork 本仓库
 ```shell
 git clone https://github.com/careteenL/jslib-cli.git yourLibName
 cd yourLibName
 npm install
 ```
 
-修改根目录`rename.js`中`newName`字段为所需名，然后运行下面脚本，一键替换
+- 修改根目录`rename.js`中`newName`字段为所需名，然后运行下面脚本，一键替换
 ```shell
 npm run rename
 ```
 
-修改`package.json`中`author`、`repository`、`bugs`信息
-
-删除`README.md`的**快速使用**
+- 修改`package.json`中`author`、`repository`、`bugs`信息
 
 然后可以愉快地开始开发自己的JS库 :)
 
-单元测试
+- 在`doc/api.md`中编写详细使用文档
+
+- 在`test/`下编写测试用例，尽可能覆盖该库所有功能
+
+- 本地开发时编写示例打开本地浏览器预览效果
+```shell
+npm run example
+```
+
+- 单元测试
 ```shell
 npm run test
 ```
 
-打包生成生产代码
+- 打包生成生产代码
 ```shell
 npm run build
 ```
+
+删除`README.md`的**快速使用**
 
 修改`package.json`、`README.md`、`CHANGELOG.md`版本号和修改日志，打tag并发布新版到`npm`
 ```shell
@@ -62,7 +73,8 @@ IE9+
 
 ## 使用文档
 
-- api
+- [API](./doc.api.md)
+- [对该库的源码解析](xxx)
 
 ## issue模板
 
