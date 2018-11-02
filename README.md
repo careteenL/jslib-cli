@@ -80,7 +80,29 @@ IE9+
 
 - [Issue Template](./ISSUETEMPLATE.md)
 
-## 贡献者
+## 贡献者及指南
+
+clone仓库并引入依赖
+```shell
+git clone git@github.com:careteenL/jslib-cli.git
+npm install
+```
+开始开发：）
+
+...
+
+请编写单元测试覆盖所加功能
+```shell
+npm run test
+```
+启动本地服务器编写示例
+```shell
+npm run example
+```
+修改`package.json README.md CHANGELOG.md`版本号，再发布
+```shell
+npm run release
+```
 
 - [Contributors](https://github.com/careteenL/jslib-cli/graphs/contributors)
 
