@@ -21,6 +21,9 @@
       "presets": [["env", {
         "modules": false
       }]]
-    }
+    },
+    "test": {
+      "presets": [["env"]]
+    } 
   }
 }
