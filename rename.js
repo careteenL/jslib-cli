@@ -24,7 +24,7 @@ console.log('[Rename] start replace')
 fileMap.forEach(file => {
   console.log(`[Scan] ${file}`)
   // sed('-i', replaceReg, `${newName}`, `${file}`)
-  sed('-i', /js(-|(20%))lib/g, `${newName}`, `${file}`)
+  sed('-i', /jslib(-|(20%))cli/g, `${newName}`, `${file}`)
 })
 
 console.log('[Rename] success')
