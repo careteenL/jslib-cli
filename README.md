@@ -73,7 +73,7 @@ IE9+
 
 ## 使用文档
 
-- [API](./doc.api.md)
+- [API](./doc/api.md)
 - [对该库的源码解析](xxx)
 
 ## issue模板
@@ -91,6 +91,10 @@ npm install
 
 ...
 
+编写详细使用文档介绍功能，可在本地查看`http://127.0.0.1:8880`
+```shell
+npm run doc
+```
 请编写单元测试覆盖所加功能
 ```shell
 npm run test
