@@ -20,7 +20,7 @@
 - 提供`issue-template`
 - 支持单元测试
 - 支持一键替换仓库名及其依赖
-- 提供本地开发时编写示例及本地浏览器预览效果
+- 提供本地开发时编写示例及本地浏览器预览效果
 - 提供文档模板
 
 ## 快速使用
@@ -43,9 +43,9 @@ npm run rename
 
 - 在`doc/api.md`中编写详细使用文档
 
-- 在`test/`下编写测试用例，尽可能覆盖该库所有功能
+- 在`test/`下编写测试用例，尽可能覆盖该库所有功能
 
-- 本地开发时编写示例打开本地浏览器预览效果
+- 本地开发时编写示例打开本地浏览器预览效果
 ```shell
 npm run example
 ```
@@ -82,7 +82,7 @@ IE9+
 
 ## 贡献者及指南
 
-clone仓库并引入依赖
+clone仓库并引入依赖
 ```shell
 git clone git@github.com:careteenL/jslib-cli.git
 npm install
@@ -95,7 +95,7 @@ npm install
 ```shell
 npm run doc
 ```
-请编写单元测试覆盖所加功能
+请编写单元测试覆盖所加功能
 ```shell
 npm run test
 ```
